@@ -1,0 +1,79 @@
+englische Übersetzungen für die pages schreiben
+
+gibt es eine Lösung, wie die Übersetzung auch für index.html fkt. kann? (Translation und save_as beißen sich offenbar)
+ggf. für welcome.md ein eig. template - ist ja ein einmaliges Problem
+How do I assign custom templates on a per-page basis? (http://docs.getpelican.com/en/3.1.1/faq.html)
+It’s as simple as adding an extra line of metadata to any pages or articles you want to have its own template.
+    template:   template_name
+Then just make sure your theme contains the relevant template file (e.g. template_name.html).
+
+article.html: Modified-Date korrekt formatiert anzeigen
+s. http://stackoverflow.com/questions/4830535/python-how-do-i-format-a-date-in-jinja2
+
+„“
+Configure smartypants (contained within typogrify) to generate german quotes (for german pages only... prob?)
+http://pythonhosted.org/Markdown/extensions/smarty.html
+For example, one might use the following config to get correct quotes for the German language:
+extensionConfigs = {
+    'smarty': {
+        'substitutions': {
+            'left-single-quote': '&sbquo;', # sb is not a typo!
+            'right-single-quote': '&lsquo;',
+            'left-double-quote': '&bdquo;',
+            'right-double-quote': '&ldquo;'
+        }
+    }
+}
+Wenn ich mir den Code in PyCharm anschaue, scheinen die Entities hardcoded zu sein, nicht mal eine Var. dafür ex! Evtl. knallhart den Code ändern?
+
+[TOC] ist enabled (in pelicanconf.py) - wer brauchts?
+
+<a name="self-awareness"></a>
+nicht eher: <a name="self-awareness"/> ??
+tag for this, to define anchors - zur Zeit kein Bedarf?
+
+try out duck dns
+
+bitcoin wallet
+in /about eintragen
+
+skype account
+in /about eintragen
+
+cell phone: speak new mailbox text
+
+do intro video for the site? - or do all articles as videos
+in german and english :)
+
+low prio: enable feeds
+
+med prio: enable comments
+
+http://erotits.com/nude-erotica/sexy-secretary-with-nice-tits-in/index.html
+http://erotichunter.com/free-erotica/katka-mc-nudes-com-elegant/
+http://erotichunter.com/free-erotica/nubiles-net-featuring-nubiles-462/
+http://erotits.com/nude-erotica/foxes-com-bianca-belini-unhealthy/index.html
+http://erotits.com/nude-erotica/an-awesome-physique-with-gorgeous/index.html
+http://erotits.com/nude-erotica/foxes-com-amber-evans-moot-gossip/index.html
+http://erotits.com/nude-erotica/hot-bikini-babe-anette-dawn-nude/index.html
+http://erotits.com/nude-erotica/emma-a-by-luca-helios-ikenian/index.html
+http://erotits.com/nude-erotica/nicole-graves-twistys-babe-be/index.html
+http://erotits.com/nude-erotica/lisen-a-at-end-of-one-s-tether/index.html
+http://erotits.com/nude-erotica/nubiles-net-featuring-nubiles-1852/index.html
+http://erotits.com/nude-erotica/denise-masturbating-her-sweet-pie/index.html
+http://erotits.com/nude-erotica/adrienne-manning-enjoys-spending/index.html
+http://erotits.com/nude-erotica/french-beauty-eva-parcker-in-a/index.html
+http://erotits.com/nude-erotica/sexy-secretary-tickles-her-sweet/index.html
+http://www.fuckingbreak.com/stunners/jana-cova-is-all-ready-for-christmas-39766/
+
+
+http://www.sexfurries.com/en/videos1411175/hot-sauce-and-vibrators-on-hairy-asian-pussy.html
+
+http://vforvoluntary.com/library/1/econ/articles-videos/12/morality
+https://www.youtube.com/watch?v=ON5SxrCjbCU
+https://www.youtube.com/watch?v=8WT41oWaqog
+https://www.google.de/webhp?ie=utf-8&oe=utf-8&gws_rd=cr&ei=f8e6VIjdIsf6UtKTgIgF#q=bitcoin%20as%20store%20of%20value
+http://en.wikipedia.org/wiki/Epistemic_modal_logic
+http://liberty.me/
+https://board.freedomainradio.com/topic/38337-bitcoin-intrinsic-value-and-mises-regression-theorem/
+Rocksmith 2014, evtl. besser SW und Kabel einzeln kaufen?

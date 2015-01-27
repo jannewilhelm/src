@@ -1,0 +1,246 @@
+@import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz&subset=latin);
+
+/* reset */
+* {
+    vertical-align: baseline;
+    font-weight: inherit;
+    font-family: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    border: 0 none;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    }
+
+ul li {
+    margin-left:1em;
+    padding-left:0.5em;
+}
+
+
+body {
+    background: #F5F4EF;
+/*
+    background: #6d9a31 url('/theme/images/bg_green.jpg');
+    background-size: 100% 100%; * scale background image to size of page content *
+    background-attachment: fixed;
+*/
+
+    font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size : 100% ;
+    color: #000305;
+    line-height: 160%;
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.container {
+    background: #F5F4EF;
+
+    width: 80%;
+    min-width: 400px;
+    max-width: 760px;
+    padding: 1em;
+
+    border-radius: 5px;
+}
+
+a:link, a:visited {
+    color: #6d9a31;
+    padding: 0 1px; /* damit shadow nicht ueber background lugt */
+    text-decoration: underline;
+}
+a:hover, a:active {
+    /*background-color: #6d9a31;*/
+    /*color: #fff;*/
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #333;
+}
+
+em, i {
+    font-style: italic;
+}
+
+h1 {font-size: 200%}
+h2 {font-size: 157%}
+h3 {font-size: 142%}
+h4 {font-size: 128%}
+h5 {font-size: 114%}
+h6 {font-size: 100%}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal; /* to avoid bold font */
+    line-height: 120%;
+    font-family: 'Yanone Kaffeesatz', arial, serif;
+    margin-bottom: 16px;
+}
+
+pre {
+    margin: 2em 1em 2em 4em;
+}
+
+p {
+    margin-bottom: 16px;
+}
+.indent {
+    margin-left:40px;
+}
+blockquote {
+    margin-left:40px;
+}
+
+address {
+    font-style: italic;
+}
+
+/*
+    Header
+*****************/
+
+header {
+    background: #6d9a31 url('/theme/images/bg_green.jpg');
+    background-size: 100% 100%;
+    /*background-attachment: fixed;*/
+    width:100%;
+}
+#banner {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto; /* setting margins to auto will center the element */
+}
+
+    /***** Banner *****/
+    #banner h1 {
+        font-size: 200%;
+        margin-bottom: 0em;
+    }
+    #banner h1 a:link, #banner h1 a:visited {
+        color: #000305;
+        display: block;
+        font-weight: normal;
+        text-decoration: none;
+    }
+    #banner h1 a:hover, #banner h1 a:active {
+        background: none;
+        color: #005A00;
+        text-shadow: none;
+    }
+
+    /***** Main Nav *****/
+    #banner nav {
+        background: #003c00;
+        height: 2em;
+        line-height: 180%;
+        margin-bottom: 1.6em;
+        border-radius: 5px;
+        display:float;
+    }
+    #banner nav ul {
+        list-style: none;
+    }
+    .left { /* why does #banner nav ul li not work? */
+    	float:left;
+    	padding-left: 0px;
+    }
+    .right {
+    	float:right;
+    	padding-right: 0.5em;
+    }
+    #banner nav ul ul {
+        position:absolute;
+        background: #003c00;
+        margin-bottom: 1.6em;
+        
+    }
+    #banner nav ul ul li {
+    	margin-left: 4px;
+    	margin-right: 10px;
+    }
+   
+    #banner nav a:link,
+    #banner nav a:visited {
+        color: white;
+        padding: 0px 0.2em 0px 0.2em;
+        text-decoration: none;
+    }
+    #banner nav a:hover,
+    #banner nav a:active,
+    #banner nav .active a:link,
+    #banner nav .active a:visited {
+        background: #F5F4EF;
+        color: #003c00;
+        text-shadow: none !important;
+        border-radius: 2px;
+    }
+
+    /*** submenus ***/
+    #banner nav ul ul {
+        display: none;
+    }
+    #banner nav ul li:hover > ul {
+        display: block;
+    }
+    .sep {
+        color:white;
+        padding-left: 0.5em;
+        line-height:70%;
+    }
+
+/**** Footer *****/
+
+.post-info {
+    font-style: italic;
+}
+
+/*************/
+
+.standout {
+    font-size: 130%;
+    font-weight: 500;
+    color: #003333;
+}
+
+/****** print *******/
+
+#sitetitleprint {
+    display: none;
+}
+
+@media print {
+
+    #sitetitle {
+        display: none !important;
+    }
+    #sitetitleprint {
+        /*display: block !important;*/
+        /* for the moment, I like it best w/o title in the print */
+    }
+
+  nav {
+    display: none;
+  }
+
+  * {
+    background: #fff;
+    color: #000;
+  }
+
+  html {
+    /*font-family: "Times New Roman", Georgia, Serif;*/
+    /*font-size: 10pt; */
+  }
+
+  body, .container {
+    width: 100%; margin: 0; float: none; padding: 0; display: block;
+    font-family: Georgia, Serif;
+  }
+
+.standout {
+    font-size: 110%;
+    font-weight: bold;
+}
+
+}
